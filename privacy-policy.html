@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Privacy Policy</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20260623005510">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="upper-header">
+			<div class="upper-header__container">
+				<div class="upper-header__text-buttons">
+					<div class="upper-header__text-button">
+						<span class="upper-header__text">Sign up and get 20% off to your first order.</span>
+						<button data-popup="#popup-sign-up" type="button" class="upper-header__sign-up-button"> Sign Up
+							Now</button>
+					</div>
+					<button type="button" class="upper-header__close-button" aria-label="Close">
+						<svg class="icon" focusable="false" aria-hidden="true">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container undefined">
+				<div class="header__logo logo"><a href="#">SHOP.CO</a></div>
+				<div class="header__menu menu">
+					<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<div data-spollers class="menu__spollers spollers">
+									<details class="spollers__item spoller-hover">
+										<summary data-spoller-close class="spollers__title spollers__title--mobile"><a href="#" class="spoller-link">Shop</a>
+										</summary>
+										<div class="spollers__body">
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Men's clothes</h2>
+													<p>In attractive and spectacular colors and designs</p>
+												</div>
+											</a>
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Women's clothes</h2>
+													<p>Ladies, your style and tastes are important to us</p>
+												</div>
+											</a>
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Kids' clothes</h2>
+													<p>For all ages, with happy and beautiful colors</p>
+												</div>
+											</a>
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Bags and Shoes</h2>
+													<p>Suitable for men, women and all tastes and styles</p>
+												</div>
+											</a>
+										</div>
+									</details>
+								</div>
+							</li>
+							<li class="menu__item"><a href="#" class="menu__link">On Sale</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">New Arrivals</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Brands</a></li>
+						</ul>
+					</nav>
+				</div>
+				<form action="#" class="header__search-form search-form">
+					<input autocomplete="off" type="search" name="search" placeholder="Products search..." class="search-form__input  input search-form__input--placeholder">
+					<button aria-label="Search" class="search-form__button">
+						<svg class="icon" aria-hidden="true" focusable="false">
+							<use xlink:href="img/icons/icons.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="header__action-buttons">
+					<a href="#" aria-label="Go to Cart" data-tippy-content="Go to Cart" class="header__cart-link">
+						<div class="header__cart-icon">
+							<svg class="icon" aria-hidden="true" focusable="false">
+								<use xlink:href="img/icons/icons.svg#cart"></use>
+							</svg>
+						</div>
+						<span class="header__cart-link-counter">3</span>
+					</a>
+					<button aria-label="Sign In" data-popup="#popup-sign-in" data-tippy-content="Sign In" class="header__sign-in-button" type="button">
+						<div class="header__sign-in-button-icon">
+							<svg class="icon" aria-hidden="true" focusable="false">
+								<use xlink:href="img/icons/icons.svg#sign-in"></use>
+							</svg>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div id="popup-sign-up" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-up">
+						<button data-close type="button" class="popup__close sign-up__close-icon"> </button>
+						<div class="sign-up__title-block">
+							<h1 class="sign-up__title">Sign up</h1>
+						</div>
+						<form class="sign-up__form" action="#" method="POST">
+							<div class="sign-up__input-wrapper">
+								<input required aria-label="Enter your full name" autocomplete="off" class="sign-up__name-input popup-input input" type="text" id="sign-up-username" name="sign-up-username" data-error="Error" placeholder="Your full name">
+							</div>
+							<div class="sign-up__input-wrapper">
+								<input required aria-label="Enter you email" class="sign-up__email-input popup-input input" id="email-sign-up" autocomplete="on" type="email" name="email" data-error="error" placeholder="Your email">
+							</div>
+							<div class="sign-up__input-wrapper">
+								<label class="sign-up__label" for="password-sign-up">Your password</label>
+								<div class="sign-up__input-wrapper">
+									<input id="password-sign-up" type="password" class="sign-up__password-input popup-input input">
+									<button type="button" class="sign-up__show-password-button">
+									</button>
+								</div>
+							</div>
+							<div class="sign-up__input-wrapper">
+								<label class="sign-up__label" for="confirm-password-sign-up">Confirm your password</label>
+								<div class="sign-up__input-wrapper sign-up__input-wrapper--margin-bottom">
+									<input id="confirm-password-sign-up" type="password" class="sign-up__confirm-password-input popup-input input">
+									<button type="button" class="sign-up__show-confirm-password-button"></button>
+								</div>
+							</div>
+							<div class="sign-up__form-buttons">
+								<button class="sign-up__button button button--white">Sign
+									up</button>
+								<button data-popup="#popup-sign-in" type="button" class="sign-up__sign-in-button">Sign
+									In</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-sign-in" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-in">
+						<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+						<div class="sign-in__title-block">
+							<h1 class="sign-in__title">Sign in</h1>
+						</div>
+						<form class="sign-in__form" action="#" method="POST">
+							<div class="sign-in__input-wrapper">
+								<input required autocomplete="off" aria-label="Enter your full name" class="sign-in__name-input popup-input input" type="text" id="username" name="username" placeholder="Enter your full name">
+							</div>
+							<div class="sign-in__input-wrapper">
+								<input required aria-label="Enter your email" class="sign-in__email-input popup-input input" id="email-sign-in" autocomplete="on" type="email" name="email" placeholder="Enter your email">
+							</div>
+							<div class="sign-in__form-buttons">
+								<button class="sign-in__button button button--white">Sign in</button>
+								<button data-popup="#popup-sign-up" type="button" class="sign-in__sign-up-button">Sign Up
+									Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="filters-popup" class="popup popup--filters">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close  filters-popup-close-icon"> </button>
+					<div class="filters-popup">
+						<div class="filters-popup__spollers spollers">
+							<div class="spollers__item">
+								<div class="spollers__title spollers__title--popup">Filters</div>
+								<div class="spollers__body">
+									<form action="#" class="filters-popup__form">
+										<div class="filters-popup__section filter">
+											<div class="filter__body filter__body--padding-top">
+												<nav class="filter__menu">
+													<ul class="filter__menu-list">
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">T-shirts</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Shorts</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Shirts</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Hoodie</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Jeans</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Price</summary>
+													<div class="spollers__body">
+														<div class="filter__body filter__body--padding-bottom">
+															<div class="filter__price-range">
+																<div id="range">
+																</div>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Colors</summary>
+													<div class="spollers__body">
+														<div class="filter__body">
+															<div class="filter__color-items color-items color-items--border">
+																<label class="color-items__item  color-items__item--green">
+																	<input checked type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--red">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--yellow">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--orange">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--emerald">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--blue">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--purple">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--pink">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--white">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--black">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Sizes</summary>
+													<div class="spollers__body">
+														<div class="filter__body">
+															<div class="filter__size-items size-items size-items--small">
+																<label class="size-items__item"> XX-Small
+																	<input type="radio" value="xx-small" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item"> X-Small
+																	<input type="radio" value="x-small" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">Small
+																	<input type="radio" value="small" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">Medium
+																	<input type="radio" value="medium" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">Large
+																	<input checked type="radio" value="large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">X-Large
+																	<input type="radio" value="x-large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">XX-Large
+																	<input type="radio" value="xx-large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">3X-Large
+																	<input type="radio" value="3x-large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">4X-Large
+																	<input type="radio" value="4x-large" class="size-items__input" name="product-size">
+																</label>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Dress Style</summary>
+													<div class="spollers__body">
+														<div class="filter__body">
+															<nav class="filter__menu">
+																<ul class="filter__menu-list">
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">Casual</a>
+																	</li>
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">
+																			Formal</a>
+																	</li>
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">Party</a>
+																	</li>
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">Gym</a>
+																	</li>
+																</ul>
+															</nav>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<button class="filters-popup__form-button button button--fw">Apply Filter</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__article-content article-content">
+				<div class="article-content__container">
+					<h1>Privacy notice</h1>
+					<p>
+						In this privacy notice, references to 'us', 'our' or 'we' are to SHOPCO. Everything that we do
+						with your data – such as storing it, working with it or deleting it – is referred to as
+						'processing'.
+					</p>
+					<ul>
+						<li>
+							<p>What this notice does not cover</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>What data do we collect?</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>How we collect your personal data</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>How do we use your personal information?</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>The lawful basis for collecting your data</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>How we protect your data and keep it secure</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p> Data held outside the UK</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>When do we share personal data?</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>How long do we keep your data for?</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<p>
+								Your rights</p>
+						</li>
+					</ul>
+
+					<h2> What this notice does not cover</h2>
+
+					<p>
+						It does not cover some websites which are not hosted on this domain, or websites and platforms
+						which collect some specific information.
+					</p>
+
+					<p>
+						These websites have their own privacy notices. You can find out more about who the controller is
+						and how the personal data is collected, stored and used via the links listed below.
+
+					</p>
+					<h2>What data do we collect?</h2>
+					<p>
+						When you contact us online, engage with our work online, or access our services online, we may
+						collect, store and use your personal data.
+
+					</p>
+					<p>This might include:</p>
+					<ul>
+						<li>
+							<p>your name your email address</p>
+						</li>
+						<li>
+							<p> your postcode</p>
+						</li>
+						<li>
+							<p> the country you live in</p>
+						</li>
+						<li>
+							<p>details of which version of web browser you are using</p>
+						</li>
+						<li>
+							<p> your IP address</p>
+						</li>
+						<li>
+							<p> information about how you use our emails</p>
+						</li>
+						<li>
+							<p> information on how you use the site</p>
+						</li>
+					</ul>
+					<h2>How we collect your personal data</h2>
+					<p>
+						Where you provide personal information via our website, it will only be used for the services
+						you requested and as specified on the relevant pages of the site.
+					</p>
+
+					<p>We collect your personal data when you:</p>
+					<ul>
+						<li>
+							<p> respond to surveys, questionnaires or evaluations</p>
+						</li>
+						<li>
+							<p>
+								participate in a web forum hosted on our site</p>
+						</li>
+						<li>
+							<p> agree to receive communications such as newsletters or marketing material</p>
+						</li>
+						<li>
+							<p> submit information to register for an event.</p>
+						</li>
+					</ul>
+					<h2>How we protect your data and keep it secure</h2>
+					<p>
+						We take the security of your personal data seriously. All personal data you provide to us will
+						be stored securely - both physically and electronically - in accordance with our policies.
+					</p>
+
+					<p>
+						We have an information security process in place to oversee the effective and secure processing
+						of your personal data.
+
+					</p>
+					<p>
+						We are committed to doing all that we can to keep your data secure. We set up systems and
+						processes to prevent unauthorised access or disclosure of the data we collect about you. For
+						example, we protect your data using varying levels of encryption. All third parties who process
+						personal data for us are required to keep that data secure.
+
+					</p>
+					<h2>Data held outside the UK</h2>
+					<p>
+						Some personal data we control is held outside the UK. This data is predominantly held in data
+						centres within the European Economic Area (EEA), for the purpose of hosting and maintenance.
+
+					</p>
+					<p>
+						We, or processors acting on our behalf, will only store or process personal data in countries
+						outside the European Economic Area (EEA), when we are assured of the security of the data. We
+						put in place security measures to minimise the possibility of the loss or unauthorised access of
+						your personal data.
+
+					</p>
+
+					<h2>Changes to this notice</h2>
+					<p>
+						We may update this privacy notice. When we do, the 'last updated' date below will also change.
+						Any updates to this privacy notice will apply to you and your data immediately. If these changes
+						affect how your personal data is processed, we will take reasonable steps to make sure you know.
+					</p>
+
+					<p> Last updated April 2025.</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class=" footer__subscription subscription">
+					<h2 class="subscription__title title title--white">STAY UPTO DATE ABOUT OUR
+						LATEST OFFERS
+					</h2>
+					<form action="#" class="subscription__form">
+						<input required autocomplete="on" type="email" name="form[]" placeholder="Enter your email address" class="subscription__input input">
+						<button class="subscription__button button button--white button--fw">Subscribe to
+							Newsletter
+						</button>
+					</form>
+				</div>
+				<div class="footer__body">
+					<div class="footer__logo-text-social">
+						<div class="footer__logo logo">
+							<a href="#">SHOP.CO</a>
+						</div>
+						<div class="footer__text">
+							<p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+						</div>
+						<div class="footer__social">
+							<a href="#" aria-label="Twitter Share" data-tippy-content="Twitter" class="footer__social-icon">
+								<img class="icon" src="img/icons/twitter.svg" alt="Image">
+							</a>
+							<a href="#" aria-label="Instagram Share" data-tippy-content="Instagram" class="footer__social-icon">
+								<img class="icon" src="img/icons/fb.svg" alt="Image">
+							</a>
+							<a href="#" aria-label="Facebook Share" data-tippy-content="Facebook" class="footer__social-icon">
+								<img class="icon" src="img/icons/inst.svg" alt="Image">
+							</a>
+							<a href="#" aria-label="Github Share" data-tippy-content="Github" class="footer__social-icon">
+								<img class="icon" src="img/icons/git.svg" alt="Image">
+							</a>
+						</div>
+					</div>
+					<div class="footer__columns">
+						<div class="footer__column">
+							<h2 class="footer__column-title">Company</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Works</a></li>
+								<li><a href="#">Career</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h2 class="footer__column-title">Help</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">Customer Support</a></li>
+								<li><a href="#">Delivery Details</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h2 class="footer__column-title">FAQ</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">Account</a></li>
+								<li><a href="#">Manage Deliveries</a></li>
+								<li><a href="#">Orders</a></li>
+								<li><a href="#">Payments</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h2 class="footer__column-title">Resources</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">Free eBooks</a></li>
+								<li><a href="#">Development Tutorial</a></li>
+								<li><a href="#">How to - Blog</a></li>
+								<li><a href="#">Youtube Playlist</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__copyright-payment">
+					<div class="footer__copyright">
+						Shop.co © 2000-2023, All Rights Reserved
+					</div>
+					<div class="footer__payment">
+						<ul class="footer__payment-list">
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/Visa1.svg" alt="Image">
+								</div>
+							</li>
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/Mastercard1.svg" alt="Image">
+								</div>
+							</li>
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/Paypal1.svg" alt="Image">
+								</div>
+							</li>
+
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/ApplePay1.svg" alt="Image">
+								</div>
+							</li>
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/GPay1.svg" alt="Image">
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20260623005510"></script>
+</body>
+
+</html>

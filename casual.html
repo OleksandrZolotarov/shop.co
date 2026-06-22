@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Casual</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20260623005510">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="upper-header">
+			<div class="upper-header__container">
+				<div class="upper-header__text-buttons">
+					<div class="upper-header__text-button">
+						<span class="upper-header__text">Sign up and get 20% off to your first order.</span>
+						<button data-popup="#popup-sign-up" type="button" class="upper-header__sign-up-button"> Sign Up
+							Now</button>
+					</div>
+					<button type="button" class="upper-header__close-button" aria-label="Close">
+						<svg class="icon" focusable="false" aria-hidden="true">
+							<use xlink:href="img/icons/icons.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container undefined">
+				<div class="header__logo logo"><a href="#">SHOP.CO</a></div>
+				<div class="header__menu menu">
+					<button type="button" aria-label="Toggle menu" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<div data-spollers class="menu__spollers spollers">
+									<details class="spollers__item spoller-hover">
+										<summary data-spoller-close class="spollers__title spollers__title--mobile"><a href="#" class="spoller-link">Shop</a>
+										</summary>
+										<div class="spollers__body">
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Men's clothes</h2>
+													<p>In attractive and spectacular colors and designs</p>
+												</div>
+											</a>
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Women's clothes</h2>
+													<p>Ladies, your style and tastes are important to us</p>
+												</div>
+											</a>
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Kids' clothes</h2>
+													<p>For all ages, with happy and beautiful colors</p>
+												</div>
+											</a>
+											<a href="#" class="spollers__body-link">
+												<div class="spollers__body-text">
+													<h2>Bags and Shoes</h2>
+													<p>Suitable for men, women and all tastes and styles</p>
+												</div>
+											</a>
+										</div>
+									</details>
+								</div>
+							</li>
+							<li class="menu__item"><a href="#" class="menu__link">On Sale</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">New Arrivals</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Brands</a></li>
+						</ul>
+					</nav>
+				</div>
+				<form action="#" class="header__search-form search-form">
+					<input autocomplete="off" type="search" name="search" placeholder="Products search..." class="search-form__input  input search-form__input--placeholder">
+					<button aria-label="Search" class="search-form__button">
+						<svg class="icon" aria-hidden="true" focusable="false">
+							<use xlink:href="img/icons/icons.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="header__action-buttons">
+					<a href="#" aria-label="Go to Cart" data-tippy-content="Go to Cart" class="header__cart-link">
+						<div class="header__cart-icon">
+							<svg class="icon" aria-hidden="true" focusable="false">
+								<use xlink:href="img/icons/icons.svg#cart"></use>
+							</svg>
+						</div>
+						<span class="header__cart-link-counter">3</span>
+					</a>
+					<button aria-label="Sign In" data-popup="#popup-sign-in" data-tippy-content="Sign In" class="header__sign-in-button" type="button">
+						<div class="header__sign-in-button-icon">
+							<svg class="icon" aria-hidden="true" focusable="false">
+								<use xlink:href="img/icons/icons.svg#sign-in"></use>
+							</svg>
+						</div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div id="popup-sign-up" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-up">
+						<button data-close type="button" class="popup__close sign-up__close-icon"> </button>
+						<div class="sign-up__title-block">
+							<h1 class="sign-up__title">Sign up</h1>
+						</div>
+						<form class="sign-up__form" action="#" method="POST">
+							<div class="sign-up__input-wrapper">
+								<input required aria-label="Enter your full name" autocomplete="off" class="sign-up__name-input popup-input input" type="text" id="sign-up-username" name="sign-up-username" data-error="Error" placeholder="Your full name">
+							</div>
+							<div class="sign-up__input-wrapper">
+								<input required aria-label="Enter you email" class="sign-up__email-input popup-input input" id="email-sign-up" autocomplete="on" type="email" name="email" data-error="error" placeholder="Your email">
+							</div>
+							<div class="sign-up__input-wrapper">
+								<label class="sign-up__label" for="password-sign-up">Your password</label>
+								<div class="sign-up__input-wrapper">
+									<input id="password-sign-up" type="password" class="sign-up__password-input popup-input input">
+									<button type="button" class="sign-up__show-password-button">
+									</button>
+								</div>
+							</div>
+							<div class="sign-up__input-wrapper">
+								<label class="sign-up__label" for="confirm-password-sign-up">Confirm your password</label>
+								<div class="sign-up__input-wrapper sign-up__input-wrapper--margin-bottom">
+									<input id="confirm-password-sign-up" type="password" class="sign-up__confirm-password-input popup-input input">
+									<button type="button" class="sign-up__show-confirm-password-button"></button>
+								</div>
+							</div>
+							<div class="sign-up__form-buttons">
+								<button class="sign-up__button button button--white">Sign
+									up</button>
+								<button data-popup="#popup-sign-in" type="button" class="sign-up__sign-in-button">Sign
+									In</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-sign-in" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="sign-in">
+						<button data-close type="button" class="popup__close sign-in__close-icon"> </button>
+						<div class="sign-in__title-block">
+							<h1 class="sign-in__title">Sign in</h1>
+						</div>
+						<form class="sign-in__form" action="#" method="POST">
+							<div class="sign-in__input-wrapper">
+								<input required autocomplete="off" aria-label="Enter your full name" class="sign-in__name-input popup-input input" type="text" id="username" name="username" placeholder="Enter your full name">
+							</div>
+							<div class="sign-in__input-wrapper">
+								<input required aria-label="Enter your email" class="sign-in__email-input popup-input input" id="email-sign-in" autocomplete="on" type="email" name="email" placeholder="Enter your email">
+							</div>
+							<div class="sign-in__form-buttons">
+								<button class="sign-in__button button button--white">Sign in</button>
+								<button data-popup="#popup-sign-up" type="button" class="sign-in__sign-up-button">Sign Up
+									Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="filters-popup" class="popup popup--filters">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close  filters-popup-close-icon"> </button>
+					<div class="filters-popup">
+						<div class="filters-popup__spollers spollers">
+							<div class="spollers__item">
+								<div class="spollers__title spollers__title--popup">Filters</div>
+								<div class="spollers__body">
+									<form action="#" class="filters-popup__form">
+										<div class="filters-popup__section filter">
+											<div class="filter__body filter__body--padding-top">
+												<nav class="filter__menu">
+													<ul class="filter__menu-list">
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">T-shirts</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Shorts</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Shirts</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Hoodie</a>
+														</li>
+														<li class="filter__list-item">
+															<a href="#" class="filter__item-link">Jeans</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Price</summary>
+													<div class="spollers__body">
+														<div class="filter__body filter__body--padding-bottom">
+															<div class="filter__price-range">
+																<div id="range">
+																</div>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Colors</summary>
+													<div class="spollers__body">
+														<div class="filter__body">
+															<div class="filter__color-items color-items color-items--border">
+																<label class="color-items__item  color-items__item--green">
+																	<input checked type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--red">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--yellow">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--orange">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--emerald">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--blue">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--purple">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--pink">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--white">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+																<label class="color-items__item color-items__item--black">
+																	<input type="radio" class="color-items__input" name="product-color">
+																</label>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Sizes</summary>
+													<div class="spollers__body">
+														<div class="filter__body">
+															<div class="filter__size-items size-items size-items--small">
+																<label class="size-items__item"> XX-Small
+																	<input type="radio" value="xx-small" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item"> X-Small
+																	<input type="radio" value="x-small" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">Small
+																	<input type="radio" value="small" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">Medium
+																	<input type="radio" value="medium" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">Large
+																	<input checked type="radio" value="large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">X-Large
+																	<input type="radio" value="x-large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">XX-Large
+																	<input type="radio" value="xx-large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">3X-Large
+																	<input type="radio" value="3x-large" class="size-items__input" name="product-size">
+																</label>
+																<label class="size-items__item">4X-Large
+																	<input type="radio" value="4x-large" class="size-items__input" name="product-size">
+																</label>
+															</div>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<div class="filters-popup__section filter">
+											<div data-spollers class="filter__spollers spollers">
+												<details class="spollers__item">
+													<summary class="spollers__title">Dress Style</summary>
+													<div class="spollers__body">
+														<div class="filter__body">
+															<nav class="filter__menu">
+																<ul class="filter__menu-list">
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">Casual</a>
+																	</li>
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">
+																			Formal</a>
+																	</li>
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">Party</a>
+																	</li>
+																	<li class="filter__list-item">
+																		<a href="#" class="filter__item-link">Gym</a>
+																	</li>
+																</ul>
+															</nav>
+														</div>
+													</div>
+												</details>
+											</div>
+										</div>
+										<button class="filters-popup__form-button button button--fw">Apply Filter</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__catalog catalog">
+				<div class="catalog__container">
+					<div class="catalog__breadcrumbs breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#">Home</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span>Casual</span>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog__content">
+						<aside class="catalog__aside filters">
+							<div data-spollers class="filters__spollers spollers">
+								<details data-open class="spollers__item">
+									<summary class="spollers__title">Filters</summary>
+									<div class="spollers__body">
+										<form action="#" class="filters__form">
+											<div class="filters__section filter">
+												<div class="filter__body filter__body--padding-top">
+													<nav class="filter__menu">
+														<ul class="filter__menu-list">
+															<li class="filter__list-item">
+																<a href="#" class="filter__item-link">T-shirts</a>
+															</li>
+															<li class="filter__list-item">
+																<a href="#" class="filter__item-link"> Shorts</a>
+															</li>
+															<li class="filter__list-item">
+																<a href="#" class="filter__item-link">Shirts</a>
+															</li>
+															<li class="filter__list-item">
+																<a href="#" class="filter__item-link">Hoodie</a>
+															</li>
+															<li class="filter__list-item">
+																<a href="#" class="filter__item-link">Jeans</a>
+															</li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+											<div class="filters__section filter">
+												<div data-spollers class="filter__spollers spollers">
+													<details class="spollers__item">
+														<summary class="spollers__title">Price</summary>
+														<div class="spollers__body">
+															<div class="filter__body filter__body--padding-bottom">
+																<div class="filter__price-range">
+																	<div id="range2">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</details>
+												</div>
+											</div>
+											<div class="filters__section filter">
+												<div data-spollers class="filter__spollers spollers">
+													<details class="spollers__item">
+														<summary class="spollers__title">Colors</summary>
+														<div class="spollers__body">
+															<div class="filter__body">
+																<div class="filter__color-items color-items color-items--border">
+																	<label class="color-items__item  color-items__item--green">
+																		<input checked type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--red">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--yellow">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--orange">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--emerald">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--blue">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--purple">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--pink">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--white">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																	<label class="color-items__item color-items__item--black">
+																		<input type="radio" class="color-items__input" name="product-color">
+																	</label>
+																</div>
+															</div>
+														</div>
+													</details>
+												</div>
+											</div>
+											<div class="filters__section filter">
+												<div data-spollers class="filter__spollers spollers">
+													<details class="spollers__item">
+														<summary class="spollers__title">Sizes</summary>
+														<div class="spollers__body">
+															<div class="filter__body">
+																<div class="filter__size-items size-items size-items--small">
+																	<label class="size-items__item"> XX-Small
+																		<input type="radio" value="xx-small" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item"> X-Small
+																		<input type="radio" value="x-small" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">Small
+																		<input type="radio" value="small" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">Medium
+																		<input type="radio" value="medium" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">Large
+																		<input checked type="radio" value="large" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">X-Large
+																		<input type="radio" value="x-large" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">XX-Large
+																		<input type="radio" value="xx-large" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">3X-Large
+																		<input type="radio" value="3x-large" class="size-items__input" name="product-size">
+																	</label>
+																	<label class="size-items__item">4X-Large
+																		<input type="radio" value="4x-large" class="size-items__input" name="product-size">
+																	</label>
+																</div>
+															</div>
+														</div>
+													</details>
+												</div>
+											</div>
+											<div class="filters__section filter">
+												<div data-spollers class="filter__spollers spollers">
+													<details class="spollers__item">
+														<summary class="spollers__title">Dress Style</summary>
+														<div class="spollers__body">
+															<div class="filter__body">
+																<nav class="filter__menu">
+																	<ul class="filter__menu-list">
+																		<li class="filter__list-item">
+																			<a href="#" class="filter__item-link">Casual</a>
+																		</li>
+																		<li class="filter__list-item">
+																			<a href="#" class="filter__item-link">
+																				Formal</a>
+																		</li>
+																		<li class="filter__list-item">
+																			<a href="#" class="filter__item-link">Party</a>
+																		</li>
+																		<li class="filter__list-item">
+																			<a href="#" class="filter__item-link">Gym</a>
+																		</li>
+																	</ul>
+																</nav>
+															</div>
+														</div>
+													</details>
+												</div>
+											</div>
+											<button class="filters__form-button button button--fw">Apply Filter</button>
+										</form>
+									</div>
+								</details>
+							</div>
+						</aside>
+						<div class="catalog__body">
+							<div class="catalog__body-header-button">
+								<div class="catalog__body-header">
+									<h1 class="catalog__body-title">Casual</h1>
+									<div class="catalog__header-text-select">
+										<div class="catalog__header-text">Showing <span>1</span>-<span>10</span> of
+											<span>100</span> Products
+										</div>
+										<div class="catalog__header-select">
+											<span>Sort by:</span>
+											<select name="form[]" data-class-modif="form">
+												<option value="1" selected>Most Popular</option>
+												<option value="2">Best Sellers</option>
+												<option value="3">Low Price</option>
+												<option value="4">High Price</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<button data-popup="#filters-popup" class="catalog__header-filter-button" type="button">
+								</button>
+							</div>
+							<div class="catalog__body-items-product items-product items-product--wrap-width">
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/01.webp" class="item-product__image" alt="Image"></a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">T-shirt with
+												Tape
+												Details</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="3.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">3.5/<span>5</span>
+											</div>
+										</div>
+										<div class="body-item-product__price-discount">
+											<span class="body-item-product__price">$120</span>
+											<span class="body-item-product__price-discounted">$100</span>
+											<span class="body-item-product__percent-label">-20%</span>
+										</div>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/03.webp" class="item-product__image" alt="Image">
+									</a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Checkered Shirt
+											</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="4.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">4.5/<span>5</span>
+											</div>
+										</div>
+										<span class="body-item-product__price">$180</span>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/02.webp" class="item-product__image" alt="Image"></a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Skinny Fit
+												Jeans</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="3.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">3.5/<span>5</span>
+											</div>
+										</div>
+										<div class="body-item-product__price-discount">
+											<span class="body-item-product__price">$240</span>
+											<span class="body-item-product__price-discounted">$260</span>
+											<span class="body-item-product__percent-label">-20%</span>
+										</div>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/04.webp" class="item-product__image" loading="lazy" alt="Image"></a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Sleeve Stripped
+												T-Shirt</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="3.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">3.5/<span>5</span>
+											</div>
+										</div>
+										<div class="body-item-product__price-discount">
+											<span class="body-item-product__price">$130</span>
+											<span class="body-item-product__price-discounted">$160</span>
+											<span class="body-item-product__percent-label">-20%</span>
+										</div>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/05.webp" class="item-product__image" loading="lazy" alt="Image">
+									</a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Polo with
+												Contrast Trimms
+											</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="4">
+											</div>
+											<div class="body-item-product__rating-value rating-value">4.5/<span>5</span>
+											</div>
+										</div>
+										<span class="body-item-product__price">$135</span>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/06.webp" class="item-product__image" loading="lazy" alt="Image"></a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Gradient
+												Graphic T-Shirt</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="3.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">3.5/<span>5</span>
+											</div>
+										</div>
+										<div class="body-item-product__price-discount">
+											<span class="body-item-product__price">$150</span>
+											<span class="body-item-product__price-discounted">$120</span>
+											<span class="body-item-product__percent-label">-20%</span>
+										</div>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/07.webp" class="item-product__image" loading="lazy" alt="Image">
+									</a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Polo with
+												Tipping
+												Details
+											</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="4.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">4.5/<span>5</span>
+											</div>
+										</div>
+										<span class="body-item-product__price">$180</span>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/08.webp" class="item-product__image" loading="lazy" alt="Image">
+									</a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Black Striped
+												T-Shirt
+											</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="4.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">5.0/<span>5</span>
+											</div>
+										</div>
+										<span class="body-item-product__price">$115</span>
+									</div>
+								</article>
+								<article class="item-product">
+									<a href="product.html" class="item-product__picture-link">
+										<img src="img/items/09.webp" class="item-product__image" loading="lazy" alt="Image">
+									</a>
+									<div class="item-product__body body-item-product">
+										<h2 class="body-item-product__title">
+											<a href="product.html" class="body-item-product__link-title">Vertical
+												Striped Shirt
+											</a>
+										</h2>
+										<div class="body-item-product__rating-wrapper rating-wrapper">
+											<div class="body-item-product__rating rating" data-rating data-rating-value="4.5">
+											</div>
+											<div class="body-item-product__rating-value rating-value">4.5/<span>5</span>
+											</div>
+										</div>
+										<span class="body-item-product__price">$212</span>
+									</div>
+								</article>
+							</div>
+							<nav aria-label="Pagination Navigation" class="catalog__pagination pagination">
+								<a href="#" class="pagination__prev" disabled aria-disabled="true"><span>Previous</span></a>
+								<ul class="pagination__list">
+									<li><a href="#" title="Go to page 1" aria-current="page" aria-label="Page 1" class="pagination__link active">1</a></li>
+									<li><a href="#" title="Go to page 2" aria-label="Page 2" class="pagination__link">2</a></li>
+									<li><a href="#" title="Go to page 3" aria-label="Page 3" class="pagination__link">3</a></li>
+									<li>...</li>
+									<li><a href="#" title="Go to page 8" aria-label="Page 8" class="pagination__link">8</a></li>
+									<li><a href="#" title="Go to page 9" aria-label="Page 9" class="pagination__link">9</a></li>
+									<li><a href="#" title="Go to page 10" aria-label="Page 10" class="pagination__link">10</a></li>
+								</ul>
+								<a href="#" class="pagination__next"><span>Next</span></a>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class=" footer__subscription subscription">
+					<h2 class="subscription__title title title--white">STAY UPTO DATE ABOUT OUR
+						LATEST OFFERS
+					</h2>
+					<form action="#" class="subscription__form">
+						<input required autocomplete="on" type="email" name="form[]" placeholder="Enter your email address" class="subscription__input input">
+						<button class="subscription__button button button--white button--fw">Subscribe to
+							Newsletter
+						</button>
+					</form>
+				</div>
+				<div class="footer__body">
+					<div class="footer__logo-text-social">
+						<div class="footer__logo logo">
+							<a href="#">SHOP.CO</a>
+						</div>
+						<div class="footer__text">
+							<p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+						</div>
+						<div class="footer__social">
+							<a href="#" aria-label="Twitter Share" data-tippy-content="Twitter" class="footer__social-icon">
+								<img class="icon" src="img/icons/twitter.svg" alt="Image">
+							</a>
+							<a href="#" aria-label="Instagram Share" data-tippy-content="Instagram" class="footer__social-icon">
+								<img class="icon" src="img/icons/fb.svg" alt="Image">
+							</a>
+							<a href="#" aria-label="Facebook Share" data-tippy-content="Facebook" class="footer__social-icon">
+								<img class="icon" src="img/icons/inst.svg" alt="Image">
+							</a>
+							<a href="#" aria-label="Github Share" data-tippy-content="Github" class="footer__social-icon">
+								<img class="icon" src="img/icons/git.svg" alt="Image">
+							</a>
+						</div>
+					</div>
+					<div class="footer__columns">
+						<div class="footer__column">
+							<h2 class="footer__column-title">Company</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Works</a></li>
+								<li><a href="#">Career</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h2 class="footer__column-title">Help</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">Customer Support</a></li>
+								<li><a href="#">Delivery Details</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h2 class="footer__column-title">FAQ</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">Account</a></li>
+								<li><a href="#">Manage Deliveries</a></li>
+								<li><a href="#">Orders</a></li>
+								<li><a href="#">Payments</a></li>
+							</ul>
+						</div>
+						<div class="footer__column">
+							<h2 class="footer__column-title">Resources</h2>
+							<ul class="footer__column-list">
+								<li><a href="#">Free eBooks</a></li>
+								<li><a href="#">Development Tutorial</a></li>
+								<li><a href="#">How to - Blog</a></li>
+								<li><a href="#">Youtube Playlist</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__copyright-payment">
+					<div class="footer__copyright">
+						Shop.co © 2000-2023, All Rights Reserved
+					</div>
+					<div class="footer__payment">
+						<ul class="footer__payment-list">
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/Visa1.svg" alt="Image">
+								</div>
+							</li>
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/Mastercard1.svg" alt="Image">
+								</div>
+							</li>
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/Paypal1.svg" alt="Image">
+								</div>
+							</li>
+
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/ApplePay1.svg" alt="Image">
+								</div>
+							</li>
+							<li class="footer__payment-items">
+								<div class="footer__payment-icon">
+									<img src="img/icons/GPay1.svg" alt="Image">
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20260623005510"></script>
+
+
+</body>
+
+</html>
