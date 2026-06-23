@@ -8739,15 +8739,17 @@
             if (digitsCounters.length) digitsCounters.forEach((digitsCounter => {
                 if (digitsCounter.hasAttribute("data-go")) return;
                 digitsCounter.setAttribute("data-go", "");
-                digitsCounter.dataset.digitsCounter = digitsCounter.innerHTML;
-                digitsCounter.innerHTML = `0`;
+                const rawValue = digitsCounter.dataset.digitsCounterValue || digitsCounter.innerHTML;
+                const cleanValue = parseInt(rawValue.replace(/[^0-9\-]/g, ""), 10);
+                digitsCounter.dataset.digitsCounterValue = cleanValue;
+                digitsCounter.innerHTML = "0";
                 digitsCountersAnimate(digitsCounter);
             }));
         }
         function digitsCountersAnimate(digitsCounter) {
             let startTimestamp = null;
             const duration = parseFloat(digitsCounter.dataset.digitsCounterSpeed) ? parseFloat(digitsCounter.dataset.digitsCounterSpeed) : 1e3;
-            const startValue = parseFloat(digitsCounter.dataset.digitsCounter);
+            const startValue = parseFloat(digitsCounter.dataset.digitsCounterValue);
             const format = digitsCounter.dataset.digitsCounterFormat ? digitsCounter.dataset.digitsCounterFormat : " ";
             const startPosition = 0;
             const step = timestamp => {
@@ -8766,10 +8768,6 @@
             if (targetElement.querySelectorAll("[data-digits-counter]").length) digitsCountersInit(targetElement.querySelectorAll("[data-digits-counter]"));
         }
         document.addEventListener("watcherCallback", digitsCounterAction);
-        setTimeout((() => {
-            const counters = document.querySelectorAll("[data-digits-counter]");
-            if (counters.length) digitsCountersInit(counters);
-        }), 50);
     }
     setTimeout((() => {
         if (addWindowScrollEvent) {
